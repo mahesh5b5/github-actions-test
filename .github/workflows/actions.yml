@@ -5,6 +5,8 @@ jobs:
   run-simple-js-action:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v1
       - name: list files
         run: |
           pwd
