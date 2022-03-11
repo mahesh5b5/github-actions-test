@@ -1,0 +1,13 @@
+name: 'shell commands workflow'
+on: [push]
+jobs:
+  run-shell-cmds:
+   runs-on: ubuntu-latest
+   steps: 
+    - name: echo a string
+      run: echo 'hello git actions'
+    - name: multiline script
+      run: | 
+        node -v 
+        npm -v
+       
