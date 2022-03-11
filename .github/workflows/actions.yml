@@ -1,11 +1,11 @@
 name: Actions workflow
 on: [push]
-jobs: 
+jobs:
   runs-on: ubuntu-latest
   steps:
-   - name: simple js action
-     uses: actions/hello-world-javascript-action@v1
-     with: 
-      who-to-greet: John
-   - name: Log greeting msg
-     run: echo "${{ steps.greet.outputs.time }}"
+    - name: simple js action
+      uses: actions/hello-world-javascript-action@v1
+      with:
+        who-to-greet: John
+    - name: Log greeting msg
+      run: echo "${{ steps.greet.outputs.time }}"
